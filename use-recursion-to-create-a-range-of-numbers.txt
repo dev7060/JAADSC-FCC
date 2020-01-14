@@ -1,0 +1,16 @@
+function rangeOfNumbers(startNum, endNum) {
+  if(startNum == endNum){
+    return [startNum];
+  }else{
+    const temp = rangeOfNumbers(startNum+1, endNum);
+    temp.unshift(startNum);
+    return temp;
+  }
+  /*
+  var ss=[];
+  for(var i=startNum; i<endNum; i++){
+    ss.push(i);
+  }
+  */
+};
+console.log(rangeOfNumbers(1, 5));
