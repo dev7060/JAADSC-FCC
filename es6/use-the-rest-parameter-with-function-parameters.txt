@@ -1,0 +1,8 @@
+const sum = (...args) => {
+  var temp=0;
+  for(var i=0; i<args.length; i++){
+      temp=temp+args[i];
+  }
+  return temp;
+}
+console.log(sum(1, 2, 3)); // 6
