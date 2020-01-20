@@ -1,0 +1,8 @@
+let yourArray = [
+    "hello",
+    "dear",
+    10,
+    20,
+    30,
+    true
+]; // change this line
