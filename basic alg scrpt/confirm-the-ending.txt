@@ -1,0 +1,22 @@
+function confirmEnding(str, target) {
+  let j=target.length-1, temp=0;
+  let flag=0;
+  for(let i=str.length-1, m=1; i>=0; i--, m++){
+    if(str[i]==target[j]){
+      temp++;
+    }
+    j--;
+    if(temp==target.length && temp==m){
+      flag=1;
+    }
+  }
+  //console.log(i);
+  if(flag==1){
+    return true;
+  }
+  else{
+    return false;
+  }
+}
+
+confirmEnding("Bastian", "n");

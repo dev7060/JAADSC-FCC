@@ -1,0 +1,14 @@
+function booWho(bool) {
+if(typeof bool == "number"){
+  return false;
+}
+if(bool == true){
+   return true;
+ }
+ else if(bool==false){
+   return true;
+ }
+ else{
+   return false;
+ }
+}
