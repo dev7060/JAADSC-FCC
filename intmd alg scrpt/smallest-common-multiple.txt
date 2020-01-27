@@ -1,0 +1,28 @@
+function smallestCommons(arr) {
+  let lower = 0;
+  let upper = 0;
+  let flag = 1;
+  if(arr[0]<arr[1]){
+    lower = arr[0];
+    upper= arr[1];
+  }
+  else{
+    lower = arr[1];
+    upper= arr[0];
+  }
+  let lcmad = lower;
+  while(flag==1){
+      flag=0;
+      for(let i=lower; i<=upper; i++){
+        if(lcmad%i!=0){
+          flag = 1;
+          break;
+        }
+      }
+      lcmad++;
+  }
+  return lcmad-1;
+}
+
+
+console.log(smallestCommons([2, 10]));
